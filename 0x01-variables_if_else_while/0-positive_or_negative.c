@@ -1,4 +1,4 @@
-#include <stido>
+#include <stido.h>
 #include <stdlib.h>
 #include <time.h>
 
