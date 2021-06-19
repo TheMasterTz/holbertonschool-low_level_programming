@@ -11,7 +11,7 @@ int main(void)
 
 	int num;
 
-	for (num = 0; x < 10; x++)
+	for (num = 0; num < 10; num++)
 	{
 		int digit = 48 + x;
 
