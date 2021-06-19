@@ -8,14 +8,16 @@
 
 int main(void)
 {
-int num;
 
-	for (num = 0; num < 10; num++)
+	int num;
 
-		putchar(num);
+	for (num = 0; x < 10; x++)
+	{
+		int digit = 48 + x;
 
-	putchar('\n');
+		putchar(digit);
+	}
+		putchar('\n');
 
-	return (0);
+		return (0);
 }
-
