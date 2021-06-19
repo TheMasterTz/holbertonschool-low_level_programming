@@ -8,12 +8,14 @@
 
 int main(void)
 {
-int digit;
+int num;
 
-for (digit = 0; digit < 10; digit++)
-{
-	printf("%d", digit);
-}
-	printf("\n");
+	for (num = 0; num < 10; digit++)
+
+		putchar(num);
+
+	putchar('\n');
+
 	return (0);
 }
+
