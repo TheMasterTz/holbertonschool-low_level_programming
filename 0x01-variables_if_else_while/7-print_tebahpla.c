@@ -10,7 +10,7 @@ int main(void)
 {
 	char chart;
 
-	for (chart = 'z';chart >= 'a'; chart--)
+	for (chart = 'z'; chart >= 'a'; chart--)
 	{
 		putchar(chart);
 	}
