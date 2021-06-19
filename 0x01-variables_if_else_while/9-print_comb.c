@@ -21,7 +21,7 @@ int main(void)
 		
 		else if (af == 57)
 		{
-			putchar(36);
+			af++;
 		}
 	
 	}
