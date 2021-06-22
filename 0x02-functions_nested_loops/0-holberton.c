@@ -1,13 +1,21 @@
-#include <stdio.h>
-
+#include "holberton.h"
 /**
- * * main - Entry point
- * *
- * * Return: Always 0 (Success)
- * */
-
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	printf("Holberton\n");
+	char x[] = "Holberton";
+	int y;
+
+	y = 0;
+
+	while (y <= 8)
+	{
+		_putchar(x[y]);
+		y++;
+	}
+	_putchar('\n');
 	return (0);
 }
