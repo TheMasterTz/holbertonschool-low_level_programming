@@ -1,11 +1,9 @@
 #include "holberton.h"
 /**
- * print_sign - function that checks for alphabetic character.
- * @c: The input character to check
- *
- * Return: Always 0.
+ * print_sign - function that prints the sign of a number..
+ * @n: The input number to check
+ * Return: int.
  */
-
 int print_sign(int n)
 {
 	if (n > 0)
