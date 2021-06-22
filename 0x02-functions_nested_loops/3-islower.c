@@ -5,7 +5,7 @@
  *
  * Return: 1 on success or 0 otherwise
  */
-int _islower(int s)
+int _islower(int c)
 {
 
 	if (s >= 97 && s <= 122)
