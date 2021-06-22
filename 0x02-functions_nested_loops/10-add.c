@@ -8,10 +8,10 @@
  * Return: int.
  */
 
-int add(int N1, int N2)
+int add(int n1, int n2)
 {
 	int total;
 
-	total = N1 + N2;
+	total = n1 + n2;
 	return (total);
 }
