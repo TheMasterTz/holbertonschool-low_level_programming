@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * _isupper - checks for uppercase character
  *@c: int
@@ -8,14 +7,15 @@
 
 int _isupper(int c)
 {
-	char letra;
+	char t;
 
-	if ((c >= 'A') && (c <= 'Z'))
+	for (t = 'A'; t <= 'Z'; t++)
 	{
-		return (1);
+		if (c == t)
+		{
+			return (1);
+		}
 	}
-	else
-	{
-		return (0);
-	}
+
+	return (0);
 }
