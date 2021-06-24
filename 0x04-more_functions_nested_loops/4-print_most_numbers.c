@@ -7,7 +7,7 @@
 
 void print_most_numbers(void)
 {
-	for (N = 0; N < 10; N++)
+	for (int N = 0; N < 10; N++)
 	{
 		if (N != 2 && N != 4)
 		{
