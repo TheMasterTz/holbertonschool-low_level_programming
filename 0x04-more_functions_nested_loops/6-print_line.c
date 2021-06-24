@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
   * print_line - Draws a straight line according to parameter
   * @n: The number of lines to draw
@@ -20,6 +19,7 @@ void print_line(int n)
 		{
 			_putchar(95);
 		}
-		_puchar('\n')
+
+		_putchar('\n');
 	}
 }
