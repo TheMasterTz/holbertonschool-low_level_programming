@@ -10,12 +10,12 @@ int _isupper(int c)
 {
 	char letra;
 
-	for (letra = 'A'; letra <= 'Z'; letra++)
+	if ((c >= 'A') && (c <= 'Z'))
 	{
-		if (letra == c)
-		{
-			return (1);
-		}
-	}	
-	return (0);
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
