@@ -1,18 +1,18 @@
 #include "holberton.h"
-
 /**
  *print_numbers - print numbers 0-9
  *
  *Return:always 0
  */
+
 void print_numbers(void)
 {
-	int digito;
+	int num;
 
-	for (digito = '0'; digito < 10; digito++)
+	for (num = 0; num < 10; num++)
 	{
-		_putchar(digito);
+		_putchar(num + '0');
 	}
+
 	_putchar('\n');
-	return (0);
 }
