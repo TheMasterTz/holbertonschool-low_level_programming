@@ -1,29 +1,26 @@
 #include "holberton.h"
-/**
- *more_numbers - prints 1-14 10x
- *
- *Return: Always 0
- */
 
+/**
+  * more_numbers - Print 10 times the numbers since 0 up to 14
+  *
+  * Return: 10 times of the numbers since 0 up to 14
+  */
 void more_numbers(void)
 {
-	int cycle, num;
+	int x, y;
 
-	for (cycle = 1; cycle <= 10; cycle++)
+	for (x = 0; x < 10; x++)
 	{
-		for (num = 0; num <= 14; num++)
+		for (y = 0; y <= 14; y++)
 		{
-			int tens, ones;
+			if (y > 9)
+			{
+				_putchar((y / 10) + '0');
+			}
 
-			tens = num / 10;
-			ones = num % 10;
-
-		if (tens != 0)
-			_putchar (tens + '0');
-
-			_putchar (ones + '0');
-
+			_putchar((y % 10) + '0');
 		}
+
 		_putchar('\n');
 	}
 }
