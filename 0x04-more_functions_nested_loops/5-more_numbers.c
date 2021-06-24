@@ -7,22 +7,22 @@
 
 void more_numbers(void)
 {
-	int c, n;
+	int cycle, num;
 
-	for (c = 0; c <= 10; c++)
+	for (cycle = 1; cycle <= 10; cycle++)
 	{
-		for (n = 0; n <= 14; n++)
+		for (num = 0; num <= 14; num++)
 		{
-			int x, y;
+			int tens, ones;
 
-			x = n / 10;
-			y = n % 10;
+			tens = num / 10;
+			ones = num % 10;
 
-			if (x != 0)
-			{
-				_putchar(x + '0');
-				_putchar(y + '0');
-			}
+		if (tens != 0)
+			_putchar (tens + '0');
+
+			_putchar (ones + '0');
+
 		}
 		_putchar('\n');
 	}
