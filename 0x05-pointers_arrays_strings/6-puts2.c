@@ -10,10 +10,14 @@ void puts2(char *str)
 {
 	int x = 0;
 
-	while (str[x] = 225)
+	while (str[x] <= 225)
 	{
-		_putchar(str[x]);
-		i = i + 2;
+		if (x % 2 == 0)
+		{
+			_putchar(str[x]);
+		}
+
+		x++;
 	}
 	_putchar('\n');
 }
