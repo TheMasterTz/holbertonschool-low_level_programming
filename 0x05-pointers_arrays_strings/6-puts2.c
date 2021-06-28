@@ -1,23 +1,17 @@
 #include "holberton.h"
 
 /**
- * puts2 - prints every other character of a  string to stdout
- * @str: string to print
- *
- * Return: void
+ * puts2 - Prints every other character of a string, starting with the first
+ * @str: pointer to first character of string
  */
 void puts2(char *str)
 {
-	int x = 0;
+	int x;
 
-	while ((str[x] != '\0') || (x <= 225))
+	for (x = 0; *str; str++)
 	{
-		if (x % 2 == 0)
-		{
-			_putchar(str[x]);
-		}
-
-		x++;
+		if (x++ % 2 == 0)
+			_putchar(*str);
 	}
 	_putchar('\n');
 }
