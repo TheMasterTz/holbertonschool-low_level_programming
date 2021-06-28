@@ -10,7 +10,7 @@ void puts2(char *str)
 {
 	int x = 0;
 
-	while ((str[x]) || (x <= 225))
+	while ((str[x] != '\0') || (x <= 225))
 	{
 		if (x % 2 == 0)
 		{
