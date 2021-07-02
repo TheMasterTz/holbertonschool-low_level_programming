@@ -1,4 +1,6 @@
+  
 #include "holberton.h"
+#include <stdio.h>
 
 /**
   * _strcat - Concatenates two strings
@@ -7,26 +9,21 @@
   *
   * Return: A pointer to the resulting string dest
   */
-
 char *_strcat(char *dest, char *src)
 {
-	int i = 0;
+	int s = 0, i;
 
-	while (dest[i])
+	while (dest[s])
 	{
-		i++;
+		s++;
 	}
 
-	int s = 0;
-
-	for (s = 0; src[s]; s++)
+	for (i = 0; src[i] != 0; i++)
 	{
-		dest[i] = src[s];
-		i++;
+		dest[s] = src[i];
+		s++;
 	}
 
-	dest[i] = '\0';
-
+	dest[dlen] = '\0';
 	return (dest);
 }
-
