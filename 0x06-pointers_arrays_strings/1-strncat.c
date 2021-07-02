@@ -1,29 +1,35 @@
 #include "holberton.h"
 /**
- *@brief _strncat - Concatenates two strings
- *
- * @param dest The destination value 
- * @param src The source value
- * @param n The limit of the concatenation
- *
- * @return A pointer to the resulting string dest
+ *_strncat- concats 2 strings using n
+ *@dest: char
+ *@src: char;
+ *@n:int;
+ *Return: char
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
+	int i = 0;
+	int j = 0;
+	int x;
 
-	int i, j;
-
-	for (i = 0; dest[i]; i++);
-    
-	for(j = 0; j < n && src[j]; j++)
-
-        {
-		dest[i] = src[j];
+	while (*dest != '\0')
+	{
+		dest++;
 		i++;
 	}
 
-	dest[i + n + 1] = '\0';
+	j = i;
 
+	for (x = 0; x < n && *src; dest++, src++, i++, x++)
+	{
+		*dest = *src;
+
+	}
+	if (j + n >= i)
+	{
+		*(dest + i) = '\0';
+	}
+
+	dest = dest - i;
 	return (dest);
 }
