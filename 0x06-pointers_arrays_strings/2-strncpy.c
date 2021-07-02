@@ -1,26 +1,22 @@
 #include "holberton.h"
 
 /**
- * @brief  _strncpy - Copy a string
- *
- * @param dest The destination value
- * @param src The source value
- * @param n The copy limit
- *
- * @return char value
+ *_strncpy- copys n bytes of src to dest
+ *@dest: char
+ *@src: char;
+ *@n:int;
+ *Return: char
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, j;
-
-	for (j = 0; src[j]; j++);
+	int i;
 
 	for (i = 0; i < n && src[i]; i++)
 	{
 		dest[i] = src[i];
 	}
-	for (i = 0; i < n; i++)
+	for (; i < n; i++)
 	{
 		dest[i] = '\0';
 	}
