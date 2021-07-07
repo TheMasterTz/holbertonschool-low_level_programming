@@ -2,10 +2,10 @@
 
 int _sqrt(int n, int i);
 /**
- *_sqrt_recursion - returns natural square root
- *@n: int
- *@i: int
- * Return: int
+ * _sqrt_recursion - Returns the natural square root of a number
+ * @n: number to calculate the natural square root
+ *
+ * Return: the natural square root
  */
 
 int _sqrt_recursion(int n)
@@ -22,15 +22,16 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * sqrt - compare squares with numbers
- *@n:int
- *@i:int
- *Return: int
- */
+  * _sqrt - Calculates natural square root
+  * @n: number to calculate the square root
+  * @i: iterate number
+  *
+  * Return: the natural square root
+  */
 int _sqrt(int n, int i)
 {
 	int sqrt = i * i;
-	
+
 	if (sqrt == n)
 	{
 		return (i);
