@@ -1,3 +1,4 @@
 #!/bin/bash
-gcc -Wall -c *.c
-ar -cvq liball.a *.o
+gcc -Wall -Wextra -Werror -pedantic -c *.c
+ar rc liball.a *.o
+
