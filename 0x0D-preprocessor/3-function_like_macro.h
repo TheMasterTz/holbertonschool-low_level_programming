@@ -1,4 +1,4 @@
 #ifndef _FUNTIONS_H
 #define _FUNTIONS_H
-#define ABC(x) ((x) < 0 ? (-x) : (x))
+#define ABS(x) ((x) < 0 ? ((x) * -1) : (x))
 #endif
