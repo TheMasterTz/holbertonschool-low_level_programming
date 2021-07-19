@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "funciones.h"
+#include "dog.h"
 
 /**
  * init_dog - initialize a dog structure
