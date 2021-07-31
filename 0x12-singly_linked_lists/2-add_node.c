@@ -9,22 +9,24 @@
   *
   * Return: The address of the new list or NULL if it failed
   */
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node(list_t  **head, const char *str)
 {
-	list_t *list = malloc(sizeof(list_t));
+	list_t *new_node;
 
-	if (list == NULL)
-	{
+	if (h == NULL)
 		return (NULL);
-	}
+	new_node = malloc(sizeof(list_t));
+	if (new_node == NULL)
+		return (NULL);
 
-	list->str = strdup(str);
-	list->len = _strlen(str);
-	list->next = *head;
-
-	*head = list;
-
-	return (list);
+	if (*h == NULL)
+		new_node->next = NULL;
+	else
+		new_node->next = *h;
+	new_node->str = strdup(str);
+	new_node->len = len(str);
+	*h = new_node;
+	return (*h);
 }
 
 /**
