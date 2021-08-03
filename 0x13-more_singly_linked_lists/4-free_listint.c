@@ -1,7 +1,8 @@
 #include "lists.h"
 /**
- * free_list - liberar memoria
- * @head: listint_t *
+ * free_listint - free memory allocated with malloc
+ * @head: pointer of kind listint_t, is the head of list
+ * Return - Nothing
  */
 void free_listint(listint_t *head)
 {
