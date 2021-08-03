@@ -1,22 +1,22 @@
 #include "lists.h"
 
 /**
- * free_listint2 - free listint
- * @head: listint_t **
- * Return: void
+ * free_listint2 - free memory allocated with malloc
+ * @head: pointer to pointer of kind listint_t, is the head of list
+ * Return - Nothing
  */
 
 void free_listint2(listint_t **head)
 {
-	listint_t *lip;
+	listint_t *copy;
 
-	if (head != NULL)
-		return (NULL);
+	if (!head)
+		return;
 
-	while (head)
+	while (*head)
 	{
-		lip = (*head)->next;
+		copy = (*head)->next;
 		free(*head);
-		*head = lip;
+		*head = copy;
 	}
 }
