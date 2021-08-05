@@ -24,8 +24,8 @@ unsigned int binary_to_uint(const char *b)
 
 	for (i = 0; i < count; i++, b--)
 	{
- 		if (*b == '1')
- 			dec += base;
+		if (*b == '1')
+			dec += base;
 
 		else if (*b != '0' && *b != '1')
 			return (0);
