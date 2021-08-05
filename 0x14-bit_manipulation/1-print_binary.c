@@ -6,23 +6,30 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int copy = n;
-	int count;
-
-	while (copy)
+	if (n == 0)
 	{
-		count++;
-		copy = copy >> 1;
-
-	}
-	count--;
-	for (; count >= 0; count--)
-	{
-		if ((n >> count) & 1)
-			_putchar('1');
-
-		else
-			_putchar('0');
-
+		_putchar('0');
+		return;
 	}
 
+	_divide(n);
+}
+
+/**
+  * _divide - ...
+  * @n: ...
+  *
+  * Return: ...
+  */
+void _divide(unsigned long int n)
+{
+	if (n < 1)
+		return;
+
+	_divide(n >> 1);
+
+	if (n & 1)
+		_putchar('1');
+	else
+		_putchar('0');
+}
