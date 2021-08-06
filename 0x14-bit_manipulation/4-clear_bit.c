@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *set_bit - set the value of a bit to 1
- *@n: unsigned long int*
- *@index: unsigned int
- *Return: int
+ * clear_bit - clear the value of a bit to 0
+ * @n: unsigned long int*
+ * @index: unsigned int
+ * Return: int
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
