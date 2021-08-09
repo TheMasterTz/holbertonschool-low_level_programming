@@ -49,10 +49,16 @@ void copy_file(const char *src, const char *dest)
 		}
 	}
 
-	if (close(o) == -1 || close(t) == -1)
+	if (close(o) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", o);
 		exit(100);
+	}
+
+	if (close(t) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", t);
+                exit(100);
 	}
 
 	if (readed == -1)
