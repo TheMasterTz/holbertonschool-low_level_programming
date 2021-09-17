@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 /**
  * sum_dlistint - sum of the doubly linked list
  * @head: the head of doubly linked list
