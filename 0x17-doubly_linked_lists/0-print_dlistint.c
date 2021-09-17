@@ -1,12 +1,15 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "lists.h"
 /**
- * print_dlistint - print all list elements
- * @h: pointer to head
- * Return: Always EXIT_SUCCESS.
+ * print_dlistint - Prints all the elements of a double linked list
+ * @h: The double linked list to prints
+ *
+ * Return: The number of nodes of the double linked list
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	int length;
+	int length = 0;
 
 	while (h != NULL)
 	{
@@ -14,5 +17,6 @@ size_t print_dlistint(const dlistint_t *h)
 		++length;
 		h = h->next;
 	}
+
 	return (length);
 }
