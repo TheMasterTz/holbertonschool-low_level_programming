@@ -11,17 +11,16 @@
  {
 	dlistint_t *current = NULL, *Newnodo = NULL;
 	unsigned int length = 0, i = 0;
-	 
-	if (*h == NULL)
+
+	if (h == NULL)
 		return (NULL);
-	
-	length = dlistint_len(*h);
 	if (*h == NULL && idx == 0)
 		return (add_dnodeint(h, n));
-	
-	else if (length == idx)
-		return (add_dnodeint_end(h, n));
-	
+
+	length = dlistint_len(*h);
+	if (idx == 0)
+		return (add_dnodeint(h, n));
+
 	current = *h;
 	while (current != NULL)
 	{
