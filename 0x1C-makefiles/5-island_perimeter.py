@@ -6,13 +6,13 @@ Island perimeter function
 
 def island_perimeter(grid):
     """sumary_line
-    
+
     Keyword arguments:
         grid: Island
 
     Return: perimeter
     """
-    
+
     perimeter = 0
 
     for y in range(len(grid)):
