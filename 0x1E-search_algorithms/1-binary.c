@@ -1,5 +1,11 @@
 #include "search_algos.h"
-
+/**
+ * print_list - print a list
+ *
+ * @array: the array of integers.
+ * @size: the size of the array.
+ * Retrun: retrun void
+ */
 void print_list(int *array, size_t size)
 {
 	size_t iter;
@@ -15,7 +21,15 @@ void print_list(int *array, size_t size)
 	}
 	printf("\n");
 }
-
+/**
+ * binary_search - function that searches for a value in an array of integers
+ * using the Linear search algorithm
+ *
+ * @array: the array of integers.
+ * @size: the size of the array.
+ * @value: the value of search
+ * Return: int.
+ */
 int binary_search(int *array, size_t size, int value)
 {
 	size_t L, R, m;
