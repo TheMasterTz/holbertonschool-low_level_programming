@@ -33,22 +33,22 @@ void print_array(int *array, int left, int right)
 
 int binary_search(int *array, size_t size, int value)
 {
-	int left = 0;
-	int right = size - 1;
-	int i;
+	int L = 0;
+	int R = size - 1;
+	int m;
 
 	if (array != NULL)
-		while (left <= right)
+		while (L <= R)
 		{
 			printf("Searching in array: ");
-			print_array(array, left, right);
-			i = (left + right) / 2;
-			if (array[i] < value)
-				left = i + 1;
-			else if (array[i] > value)
-				right = i - 1;
+			print_array(array, L, R);
+			m = (L + R) / 2;
+			if (array[m] < value)
+				L = m + 1;
+			else if (array[m] > value)
+				R = m - 1;
 			else
-				return (i);
+				return (m);
 		}
 	return (-1);
 }
