@@ -1,7 +1,4 @@
 #include "search_algos.h"
-
-#include "search_algos.h"
-
 /**
  * print_array - prints the array being searched every time it changes
  * @array: Pointer to a pointer to the first element of the array to search in
@@ -13,7 +10,8 @@ void print_array(int *array, int left, int right)
 {
 	int i;
 
-	for (i = left ; i < right ; i++)
+	printf("Searching in array: ");
+	for (i = left; i < right; i++)
 	{
 		printf("%d, ", array[i]);
 	}
@@ -40,7 +38,6 @@ int binary_search(int *array, size_t size, int value)
 	if (array != NULL)
 		while (L <= R)
 		{
-			printf("Searching in array: ");
 			print_array(array, L, R);
 			m = (L + R) / 2;
 			if (array[m] < value)
